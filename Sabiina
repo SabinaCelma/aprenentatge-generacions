@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprenentatge entre Generacions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+    }
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    form {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Aprenentatge entre Generacions</h1>
+  <p>Un projecte gratuït per connectar joves i gent gran a través de la tecnologia</p>
+</header>
+
+<nav>
+  <a href="#qui-som">Qui som</a>
+  <a href="#serveis">Membres i serveis</a>
+  <a href="#reserves">Reserva</a>
+</nav>
+
+<section id="qui-som">
+  <h2>Qui som</h2>
+  <p>Som un grup de joves que volem oferir temps i coneixement per ajudar a la gent gran a entendre i utilitzar millor la tecnologia. El projecte es duu a terme a la Sala Polivalent de Maristes Sants Les Corts i és totalment gratuït.</p>
+</section>
+
+<section id="serveis">
+  <h2>Membres i serveis</h2>
+  <div class="members">
+    <div class="card"><strong>Ray</strong><br>Intel·ligència Artificial<br>Dimecres 17:00 – 18:00</div>
+    <div class="card"><strong>Sabina</strong><br>Ús xarxes socials<br>Dimecres 17:00 – 18:00</div>
+    <div class="card"><strong>Laia</strong><br>Classe de fotografia<br>Divendres 18:00 – 20:00</div>
+    <div class="card"><strong>Maria</strong><br>Edició de vídeo<br>Dimarts 18:00 – 19:30</div>
+    <div class="card"><strong>Ricard</strong><br>Informàtica bàsica<br>Dilluns 18:00 – 19:30</div>
+    <div class="card"><strong>Javier</strong><br>Detecció de Fake News<br>Dimecres 17:30 – 18:30</div>
+  </div>
+</section>
+
+<section id="reserves">
+  <h2>Reserva una cita</h2>
+  <form>
+    <label for="nom">Nom complet:</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="membre">Amb qui vols fer la sessió?</label>
+    <select id="membre" name="membre" required>
+      <option value="Ray">Ray - Intel·ligència Artificial</option>
+      <option value="Sabina">Sabina - Xarxes socials</option>
+      <option value="Laia">Laia - Fotografia</option>
+      <option value="Maria">Maria - Edició de vídeo</option>
+      <option value="Ricard">Ricard - Informàtica bàsica</option>
+      <option value="Javier">Javier - Fake News</option>
+    </select>
+
+    <label for="missatge">Comentaris o dubtes:</label>
+    <textarea id="missatge" name="missatge" rows="4"></textarea>
+
+    <button type="submit">Reservar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Aprenentatge entre Generacions | Sala Polivalent, Maristes Sants Les Corts</p>
+</footer>
+
+</body>
+</html>
